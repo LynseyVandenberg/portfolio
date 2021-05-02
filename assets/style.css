@@ -82,15 +82,13 @@
 
 
   .work {
-    background-color: rgb(164, 206, 207);
     max-width: 95%;
     margin: 0 auto;
   }
 
   .contact {
-    background-color: rgb(164, 206, 207);
     max-width: 95%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .row {
