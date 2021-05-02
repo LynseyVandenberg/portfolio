@@ -1,64 +1,159 @@
-  * {
-    box-sizing: border-box;
-    margin: 20;
-    padding: 20;
-  }
-
-  body {
-    color: black
-    font-family: Helvetica, Arial, sans-serif;
+:root {
+    --primary-color: #000000;
+    --secondary-color: #57859c;
+    --tertiary-color:#c3e2e6;
   }
   
-  /* header & navigation bar styles start */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--primary-color);
+    font-family: monospace;
+    margin: auto;    
+  }
 
+  /* HEADER / NAV BAR STYLES START */
+  
   header {
     padding: 20px 35px;
-    background-color: white;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-image: url("");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
     z-index: 9999;
-  } 
-  
-  
-  header {
-      padding: 100px;
-      color: black;
-      text-align:center;
   }
   
-  ul {
-      display:flex;
-      flex-wrap: wrap;
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
+      background: var(--secondary-color);
+      color: var(--tertiary-color);
+      border-radius: 15px;
+      text-shadow: none;
+  }
+  /* HEADER / NAVBAR STYLES END */
+
+  /* BODY STYLES START */
+  .about {
+    max-width: 95%;
+    margin: 0 auto;
   }
 
-  li {
-      height: 100px;
-      flex-grow: 1
+
+  .work {
+    background-color: rgb(164, 206, 207);
+    max-width: 95%;
+    margin: 0 auto;
   }
 
-  img {
-      max-height: 100%;
-      min-width: 100%;
-      object-fit: cover;
-      vertical-align: bottom;
+  .contact {
+    background-color: rgb(164, 206, 207);
+    max-width: 95%;
+    margin: 0 auto;
   }
 
+  .row {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  .flex-container > div {
-    background-color: #f1f1f1;
+  /* IMAGE GRID STYLES */
+
+  .img {
+    height: 100px;
     margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+    box-shadow: 10px 14px 20px 0px rgba(226,204,189,1);
   }
 
-
+  .img-1{
+    background: url('./images/digital-marketing-meeting.jpg') no-repeat center center;
+    content:url('https://github.com/LynseyVandenberg/run-buddy');
+    background-size: cover;
+    width: 100%;
+    
+  }
+  .img-2{
+    background: url('./images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .img-3{
+    background: url('./images/MG.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+  .img-4 {
+    background: url('./images/ww.jpeg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+  /* BODY STYLES END */
   
-
-
+  
+  
+  /* FOOTER STYLES START */
+  footer {
+    background: var(--secondary-color);
+    margin: auto;
+    text-align: center;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
